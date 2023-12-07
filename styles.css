@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+    
+}
+body{
+    background-color: #fff;
+    /* border-bottom: 1px solid #FE5200; */
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #FF9B23;
+    display: flex;
+    justify-content: space-between; /*essa propriedade deixar os elementos um pouco afastado do canto da tela. (MENU) */
+    align-items: center;   
+}
+
+.logo-container{
+   display: flex; 
+   align-items: center;
+   justify-content:space-between;
+   padding-left: 5%; /*afastar da lateral esquerda*/
+}
+.logo-container p {
+    color: #fff;
+    font-size: 30px;
+}
+
+.menu-container{
+    padding-right: 5%;  /*afastar da lateral direita*/
+   
+}
+
+.menu-container li {
+    display: inline; 
+    list-style: none;
+}
+
+.menu-container li a{
+    font-size: 20px;  
+    color: #fff;
+    display: inline-block;
+    padding: 6px 15px;
+    text-decoration: none;
+    transition: .6s; /*serve para da um efeito no hover (quando o mouse passar por cima da list*/
+    border-radius: 5px;
+}
+
+li a:hover{
+    background-color: #fff;
+    color: #FF9B23;
+    border-radius: 5px;
+}
+
+.menu-container ul li:last-child a{
+    margin-left: 5px;
+    float: right;
+    background-color: #fff;
+    color: #FF9B23;
+    border-radius: 5px;
+}
+.menu-container ul li:last-child a:hover{
+    background-color: #FE5200;
+    color: #fff;
+    border: 1px solid #fff;
+}
