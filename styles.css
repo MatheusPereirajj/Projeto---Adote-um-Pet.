@@ -6,7 +6,7 @@
     
 }
 body{
-    background-color: #fff;
+    /* background-color: #fafafa; */
     /* border-bottom: 1px solid #FE5200; */
 }
 header{
@@ -66,4 +66,9 @@ li a:hover{
     background-color: #FE5200;
     color: #fff;
     border: 1px solid #fff;
+}
+
+#container-maior{
+    background-color: black;
+    
 }
