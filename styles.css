@@ -5,10 +5,7 @@
     font-family:cursive;
     
 }
-body{
-    /* background-color: #fafafa; */
-    /* border-bottom: 1px solid #FE5200; */
-}
+
 header{
     width: 100%;
     height: 100px;
@@ -68,7 +65,49 @@ li a:hover{
     border: 1px solid #fff;
 }
 
-#container-maior{
-    background-color: black;
-    
+/* lado esquerdo da tela */
+#container-esquerdo {
+    background-color:#fff;
+    color: #484848;
+    width: 50%;
+    height: 250px;
+    margin: 150px auto auto 20px;
+}
+
+#container-esquerdo h1,
+h2 {
+    font-weight: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase; 
+}
+#container-esquerdo h2{
+    padding: 10px 0 12px 0; 
+}
+
+#container-esquerdo input[type="submit"]{
+    background-color: #FF9B23;
+    color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    padding: 4px 40px;
+    border: none;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+#container-esquerdo input[type="submit"]:hover{
+    background-color: #cc7c1a;   
+    transform: scale(1.05);
+    color: white;
+
+}
+#container-esquerdo p{
+    font-size: small;
+    padding-top: 5px;
+}
+
+/* lado direito da tela */
+#container-direito {
+    background-color: #FFE3B3;
+    width: 50% 100%;
+    height: 250px;
 }
