@@ -92,7 +92,7 @@ h2 {
 #container-esquerda h2{
     padding: 10px 0 12px 0; 
 }
-#container-esquerda input[type="submit"]{
+#container-esquerda a{
     background-color: #FF9B23;
     color: #fff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -101,12 +101,14 @@ h2 {
     border: none;
     cursor: pointer;
     transition: transform 200ms ease-in-out;
+    text-decoration: none;
 }
 
-#container-esquerda input[type="submit"]:hover{
+#container-esquerda a:hover{
     background-color: #cc7c1a;   
     transform: scale(1.05);
     color: white;
+    
 }
 
 #container-esquerda p{
