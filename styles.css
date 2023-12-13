@@ -65,26 +65,34 @@ li a:hover{
     border: 1px solid #fff;
 }
 
-/* lado esquerdo da tela */
-#container-esquerdo {
-    background-color:#fff;
-    color: #484848;
-    width: 50%;
-    height: 250px;
-    margin: 150px auto auto 20px;
+/* containe */
+#container-maior div{
+    width: 50%; /*largura*/
+    
 }
-
-#container-esquerdo h1,
+#container-maior {
+    display: flex;
+    height: 100vh; /*altura*/
+}
+/* esquerda [botton login] */
+#container-esquerda{
+    background-color:#fff;
+    color: #484848; 
+    padding: 180px 0 0 5%;
+}
+#container-esquerda h1,
 h2 {
     font-weight: 1000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase; 
 }
-#container-esquerdo h2{
+#container-esquerda h1{
+    letter-spacing: -1px;
+}
+#container-esquerda h2{
     padding: 10px 0 12px 0; 
 }
-
-#container-esquerdo input[type="submit"]{
+#container-esquerda input[type="submit"]{
     background-color: #FF9B23;
     color: #fff;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -94,20 +102,26 @@ h2 {
     cursor: pointer;
     transition: transform 200ms ease-in-out;
 }
-#container-esquerdo input[type="submit"]:hover{
+
+#container-esquerda input[type="submit"]:hover{
     background-color: #cc7c1a;   
     transform: scale(1.05);
     color: white;
-
-}
-#container-esquerdo p{
-    font-size: small;
-    padding-top: 5px;
 }
 
-/* lado direito da tela */
-#container-direito {
+#container-esquerda p{
+    font-size: 10px;
+    padding-top: 5px
+}
+/* direita [img] */
+#container-direita {
     background-color: #FFE3B3;
-    width: 50% 100%;
-    height: 250px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+#container-direita img {
+    width: 500px;
+    height: 500px; 
+   padding-top: 10%;
 }
