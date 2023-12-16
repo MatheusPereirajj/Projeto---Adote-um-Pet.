@@ -11,7 +11,7 @@ header{
     height: 100px;
     background: #FF9B23;
     display: flex;
-    justify-content: space-between; /*essa propriedade deixar os elementos um pouco afastado do canto da tela. (MENU) */
+    justify-content: space-between;
     align-items: center;   
 }
 

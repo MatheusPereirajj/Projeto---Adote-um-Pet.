@@ -1,41 +1,79 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family:cursive;   
 }
 
-
-#container-maior{
+#maior{
+    background-color: rgb(19, 19, 85);
     width: 100%;
-    height: 655px;
-    background: #FF9B23;
+    height: 1000px;
     display: flex;
-    justify-content: space-between; /*essa propriedade deixar os elementos um pouco afastado do canto da tela. (MENU) */
+}
+/* IMAGE */
+#esquerda{
+    background-color: #FFE3B3;
+    width: 40%;
+    height: 1000px;
 }
 
-#container-esqueda {
-    background-color: rgb(100, 53, 53);
-    width: 45%;
-    height: 655px;
+/* HOME da page */
+#direita {
+    background-color: #ee2da4;
+    width: 60%;
+    height: 100px;
 }
-
-#menu {
-    background-color: #fff;
+#direita header{
     width: 100%;
     height: 100px;
+    background: #fff;
     display: flex;
-    
+    justify-content: flex-end;
+    align-items: center; 
+    border: none;
     
 }
-#menu ul {
+#direita li {
     list-style: none;
-    
-    
-   
+    display: inline; /*aqui serve para deixar as "li" na horizontal.*/
+    align-items: center; /*centralizar*/
 }
-#login{
-    
-    
+#direita li a {
+    color: #FF9B23;
+    align-items: center; /*centralizar*/
+    font-size: 20px; 
+    padding: 4px 30px;
+    border-radius: 5px;
+    display: inline-block; /* é possível "avizinhar" outros elementos e permitem redimensionamento de altura e largura.*/ /* sempre bom usar o "inline" no "li" e o "inline-block" no "li a" */
+    text-decoration: none; /*tirar o underline da palavra*/
+    transition: .6s; /*serve para da um efeito no hover (quando o mouse passar por cima da list*/
+}
 
+#direita li a:hover{
+    background-color:#FF9B23;
+    color: #fff;
+    border: none; 
 }
+
+#direita ul li:last-child a{
+    margin-left: 5px;
+    float: right;
+    background-color: #FF9B23;
+    color: #fff;
+    border: none;  
+}
+#direita ul li:last-child a:hover{
+    background-color: #fff;
+    color: #FF9B23;
+}
+
+/* Login */
+#direita-login {
+    background-color: black;
+    width: 100%;
+    height: 900px;
+}
+
+
+    
