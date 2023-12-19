@@ -1,30 +1,30 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family:cursive;   
 }
 
 #maior{
     background-color: rgb(19, 19, 85);
     width: 100%;
-    height: 1000px;
+    height: 655px;
     display: flex;
 }
 /* IMAGE */
-#esquerda{
+#container-esquerda{
     background-color: #FFE3B3;
     width: 40%;
-    height: 1000px;
+    height: 655px;
 }
 
 /* HOME da page */
-#direita {
-    background-color: #ee2da4;
+#container-direita {
+    background-color: #fff;
     width: 60%;
     height: 100px;
 }
-#direita header{
+.home header{
     width: 100%;
     height: 100px;
     background: #fff;
@@ -34,12 +34,12 @@
     border: none;
     
 }
-#direita li {
+.home li {
     list-style: none;
     display: inline; /*aqui serve para deixar as "li" na horizontal.*/
     align-items: center; /*centralizar*/
 }
-#direita li a {
+.home li a {
     color: #FF9B23;
     align-items: center; /*centralizar*/
     font-size: 20px; 
@@ -50,30 +50,105 @@
     transition: .6s; /*serve para da um efeito no hover (quando o mouse passar por cima da list*/
 }
 
-#direita li a:hover{
+.home li a:hover{
     background-color:#FF9B23;
     color: #fff;
     border: none; 
 }
 
-#direita ul li:last-child a{
+.home ul li:last-child a{
     margin-left: 5px;
     float: right;
     background-color: #FF9B23;
     color: #fff;
     border: none;  
 }
-#direita ul li:last-child a:hover{
+.home ul li:last-child a:hover{
     background-color: #fff;
     color: #FF9B23;
 }
 
 /* Login */
-#direita-login {
-    background-color: black;
+.direita-login{
+    background-color: #fff;
     width: 100%;
-    height: 900px;
+    height: 555px;
+}
+.direita-login form {
+    
+}
+
+.direita-login h1{
+    color: #7A7562;
+    margin-bottom: 15px ;
+}
+
+.direita-login input{
+    margin-bottom:  10px; /*espaço de um input para o outro*/
+   
+}
+
+.direita-login input[type="email"],
+.direita-login input[type="password"],
+.direita-login input[type="button"]{
+    background-color: #e6e5e5;
+    width: 400px; /*largura dos input*/
+    height: 40px; /*altura do input*/
+    padding: 10px; /*espaçamento de 10px de espaço para quando alguem for digitar dentro do input*/
+}
+
+.direita-login input[type="email"],
+.direita-login input[type="password"]{
+    border: none;
+}
+
+.direita-login input[type="button"]{
+    justify-content: center;
+    background-color: #FF9B23;
+    color: #fff;   
+    transition: .6s;
+    cursor: pointer;
+    border: none;
+}
+
+.direita-login input[type="button"]:hover{
+    background-color: #f0efef;
+    color: #FF9B23;
+    border: 1px solid #FF9B23; 
+    transition: .6s;
+    cursor: pointer;
 }
 
 
+.fb-gg {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    /* justify-content: flex-end; */
+    text-align: center; 
+    border: none;
+
+}
+
+.fb-gg li {
+    list-style: none;
+    display: inline; /*aqui serve para deixar as "li" na horizontal.*/
+    align-items: center; /*centralizar*/
+}
+
+.fb-gg  li a {
+    align-items: center; /*centralizar*/
+    font-size: 20px; 
+    padding: 4px 62px;
+    display: inline-block; /* é possível "avizinhar" outros elementos e permitem redimensionamento de altura e largura.*/ /* sempre bom usar o "inline" no "li" e o "inline-block" no "li a" */
+    text-decoration: none; /*tirar o underline da palavra*/
+}
+.fb-gg  li a {
+    background-color: rgb(64, 32, 150);
+    color: #fff;
+}
+.facebook li a {
     
+    
+}

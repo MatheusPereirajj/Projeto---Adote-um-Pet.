@@ -10,25 +10,44 @@
 
 <body>
     <div id="maior">
-        <div id="esquerda">   
-            <h1>image</h1> 
+        <div id="container-esquerda">
+            <h1>image</h1>
         </div>
-        
-        <div id="direita">     
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="#">Adotar</a></li>
-                        <li><a href="#">Doar pet</a></li>
-                        <li><a href="./cadastro/cadastro.html">Cadastrar</a></li>
-                        <li><a href="./Pages/login/login.html">Login</a></li>
-                    </ul>
-                </nav>
-            </header>
 
-            <div id="direita-login">
-                <h1>login</h1>
-            
+        <div id="container-direita">
+            <div class="home">
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Adotar</a></li>
+                            <li><a href="#">Doar pet</a></li>
+                            <li><a href="./cadastro/cadastro.html">Cadastrar</a></li>
+                            <li><a href="./Pages/login/login.html">Login</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+
+            <div class="direita-login">
+                <h1>Fazer login</h1>
+                <form>
+                    <input type="email" name="email" placeholder="E-mail...">
+                    <input type="password" name="senha" placeholder="Senha...">
+                    <input type="button" value="Login">
+                    <!-- <input type="button" value="Esqueceu a senha?"> -->
+                </form>
+
+                <div>
+                    <nav class="fb-gg">
+                        <ul>
+                            <li class="facebook"><a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><a
+                                    href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ASKXGp1bqu9t4TKGqdpXypzzKKhSJ90kOIfaRYrlZZjNnEjxRz70xummhjFVlvnDYZjxtHuA3aCUWg&osid=1&passive=1209600&service=mail&theme=glif&dsh=S-1945302384%3A1702689145347800">Google</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
 
