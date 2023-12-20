@@ -11,19 +11,21 @@
     height: 655px;
     display: flex;
 }
-/* IMAGE */
-#container-esquerda{
+
+
+#container-img{
     background-color: #FFE3B3;
     width: 40%;
     height: 655px;
 }
 
-/* HOME da page */
+
 #container-direita {
     background-color: #fff;
     width: 60%;
     height: 100px;
 }
+
 .home header{
     width: 100%;
     height: 100px;
@@ -31,14 +33,15 @@
     display: flex;
     justify-content: flex-end;
     align-items: center; 
-    border: none;
-    
+    border: none; 
 }
+
 .home li {
     list-style: none;
     display: inline; /*aqui serve para deixar as "li" na horizontal.*/
     align-items: center; /*centralizar*/
 }
+
 .home li a {
     color: #FF9B23;
     align-items: center; /*centralizar*/
@@ -63,36 +66,40 @@
     color: #fff;
     border: none;  
 }
+
 .home ul li:last-child a:hover{
     background-color: #fff;
     color: #FF9B23;
 }
 
-/* Login */
 .direita-login{
     background-color: #fff;
     width: 100%;
     height: 555px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
 .direita-login form {
-    
+    margin-left: 23.5%;
 }
 
 .direita-login h1{
-    color: #7A7562;
+    color: #6d6d6d;
     margin-bottom: 15px ;
+    font-weight: bold;   
 }
 
 .direita-login input{
-    margin-bottom:  10px; /*espaço de um input para o outro*/
-   
+    margin-top:  20px; /*espaço de um input para o outro*/ 
+    border-radius: 5px;
 }
 
-.direita-login input[type="email"],
-.direita-login input[type="password"],
-.direita-login input[type="button"]{
+.direita-login input{
     background-color: #e6e5e5;
-    width: 400px; /*largura dos input*/
+    width: 412px; /*largura dos input*/
     height: 40px; /*altura do input*/
     padding: 10px; /*espaçamento de 10px de espaço para quando alguem for digitar dentro do input*/
 }
@@ -103,7 +110,6 @@
 }
 
 .direita-login input[type="button"]{
-    justify-content: center;
     background-color: #FF9B23;
     color: #fff;   
     transition: .6s;
@@ -119,36 +125,46 @@
     cursor: pointer;
 }
 
-
-.fb-gg {
+.link {
     width: 100%;
     height: 100px;
-    background: #fff;
-    display: flex;
-    /* justify-content: flex-end; */
     text-align: center; 
     border: none;
-
 }
 
-.fb-gg li {
+.link li {
     list-style: none;
     display: inline; /*aqui serve para deixar as "li" na horizontal.*/
     align-items: center; /*centralizar*/
 }
 
-.fb-gg  li a {
+.link  li a {
+    /* background-color: #6d6d6d; */
     align-items: center; /*centralizar*/
-    font-size: 20px; 
-    padding: 4px 62px;
+    padding: 10px 70px;
+    
     display: inline-block; /* é possível "avizinhar" outros elementos e permitem redimensionamento de altura e largura.*/ /* sempre bom usar o "inline" no "li" e o "inline-block" no "li a" */
     text-decoration: none; /*tirar o underline da palavra*/
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
-.fb-gg  li a {
-    background-color: rgb(64, 32, 150);
+
+.link  li .facebook {
+    background-color: #566495;
+    border-radius: 5px;
     color: #fff;
 }
-.facebook li a {
-    
-    
+
+.link  li .google {
+    background-color: #0866FF;
+    border-radius: 5px;
+    color: #fff; 
 }
+
+span, span b {
+    font: small;
+    color: #6d6d6d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
